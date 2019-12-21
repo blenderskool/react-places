@@ -2,8 +2,8 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import './map.css';
 
-function Marker() {
-  return <div className="marker" />;
+function Marker({ placeName }) {
+  return <div className="marker" tabIndex="-1" dataname={placeName} />;
 }
 
 export default class Map extends React.Component {
@@ -31,6 +31,7 @@ export default class Map extends React.Component {
                 key={place._id}
                 lat={place.location.Lat}
                 lng={place.location.Lng}
+                placeName={place.placeName}
               />
             ))
           }
