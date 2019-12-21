@@ -31,11 +31,16 @@
   top: -35px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
+
+.map .marker:hover,
 .map .marker:focus {
-  border-color: #26343c;
   z-index: 1;
   transform: scale(1.2);
 }
+.map .marker:focus {
+  border-color: #26343c;
+}
+
 .map .marker:focus::before {
   content: attr(dataname);
 }
