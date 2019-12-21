@@ -2,3 +2,12 @@
   height: 100vh;
   width: 80%; 
 }
+
+.map .marker {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  background-color: #2196f3;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
