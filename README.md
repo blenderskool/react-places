@@ -13,6 +13,12 @@ git clone https://github.com/blenderskool/react-places
 cd react-places
 ```
 
+#### Create a `.env` file at project root with the following API keys
+```
+REACT_APP_GOOGLE_MAPS_KEY=<GOOGLE_MAPS_KEY>
+REACT_APP_23ML_KEY=<23ML_KEY>
+```
+
 In the project directory, you can run:
 
 #### `yarn`
