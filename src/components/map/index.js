@@ -40,8 +40,8 @@ export default class Map extends React.Component {
           {
             marker ?
             <Marker
-              lat={marker.lat}
-              lng={marker.lng}
+              lat={marker.lat ? marker.lat : 0}
+              lng={marker.lng ? marker.lng : 0}
             /> :
             null
           }
