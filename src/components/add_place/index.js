@@ -21,8 +21,6 @@ export default class AddPlace extends React.Component {
      * If current latLng is same as new latLng, don't update the state
      */
     if (latLng === state.latLng) return null;
-
-    console.log(latLng, state.latLng);
     return { latLng };
   }
 
