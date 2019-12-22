@@ -17,23 +17,33 @@ export default class Map extends React.Component {
   };
 
   render() {
+    const { places, marker, onClick, center, zoom } = this.props;
 
     return (
       <div className="map">
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_KEY }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
+          defaultCenter={center}
+          defaultZoom={zoom}
+          onClick={onClick}
         >
           {
-            this.props.places.map(place => (
+            places.map(place => (
               <Marker
-                key={place._id}
+                key={place.placeName}
                 lat={place.location.Lat}
                 lng={place.location.Lng}
                 placeName={place.placeName}
               />
             ))
+          }
+          {
+            marker ?
+            <Marker
+              lat={marker.lat}
+              lng={marker.lng}
+            /> :
+            null
           }
         </GoogleMapReact>
       </div>

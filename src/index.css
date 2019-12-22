@@ -22,7 +22,6 @@ input {
   border-radius: 5px;
   color: #26343c;
   outline: none;
-  /* margin: 20px; */
 }
 input::placeholder {
   color: #82888d;
@@ -32,14 +31,13 @@ input:focus {
 }
 
 button.btn {
-  min-width: 150px;
-  max-width: 100%;
+  width: 150px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   border: none;
   background-color: #00c368;
   color: #ffffff;
-  height: 45px;
+  min-height: 45px;
   font-size: 1.1rem;
   border-radius: 5px;
   cursor: pointer;
@@ -49,4 +47,23 @@ button.btn {
 button.btn:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+button.btn .icon {
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+button.btn.no-outline {
+  background: none;
+  box-shadow: none;
+}
+button.btn.icon {
+  width: 45px;
+  height: 45px;
+  color: #82888d;
+  transition: all 0.2s ease;
+}
+button.btn.icon:hover {
+  color: #26343c;
+  transform: none;
 }

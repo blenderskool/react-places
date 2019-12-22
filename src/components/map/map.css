@@ -41,6 +41,6 @@
   border-color: #26343c;
 }
 
-.map .marker:focus::before {
+.map .marker[dataname]:focus::before {
   content: attr(dataname);
 }
