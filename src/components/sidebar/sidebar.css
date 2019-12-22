@@ -14,7 +14,6 @@
 
 .sidebar ul.places {
   list-style: none;
-  text-align: left;
 
   width: 100%;
   padding: 0;
@@ -23,6 +22,7 @@
 }
 
 .sidebar ul.places li {
+  text-align: left;
   padding: 12px 30px;
   border-bottom: 1px solid rgba(195, 204, 211, 0.5);
   cursor: pointer;
